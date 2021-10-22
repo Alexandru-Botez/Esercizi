@@ -1,2 +1,2 @@
 # hsExercise
-Just some exercises  that i did in highschool
+Exercises that i did in highschool.
