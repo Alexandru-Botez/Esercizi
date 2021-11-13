@@ -35,7 +35,7 @@ int main()
 			fiammiferiTotali = fiammiferiTotali + (-fiammiferiTotali);
 		}
   
-     cout << "Sono rimasti: " << fiammiferiTotali << endl;
+     		cout << "Sono rimasti: " << fiammiferiTotali << endl;
 	}
 	if (round % 2 == 1)
 	{
