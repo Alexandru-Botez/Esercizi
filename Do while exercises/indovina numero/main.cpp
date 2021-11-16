@@ -9,8 +9,6 @@ int main()
 	int min = 0, max = 100;
 	char scelta;
 	srand(time(NULL));
-
-	
 	
 	do
 	{
