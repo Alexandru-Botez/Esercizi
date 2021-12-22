@@ -26,26 +26,29 @@ int main()
 			cin >> voto;
 		}
 
-		// inserisco i dati nel vettore e definisco la variabile i come dimensione logica del vettore
-		vetMateria[i] = materia;
-		vetVoto[i] = voto;
-
-		i++;
+		if(voto!=0 && materia != 'x'){
+		
+			// inserisco i dati nel vettore e definisco la variabile i come dimensione logica del vettore
+			vetMateria[i] = materia;
+			vetVoto[i] = voto;
+			i++;
+		}
 	} while (voto != 0 && materia != 'x');
 
 	cout << "Quale materia vuoi la media?: ";
 	cin >> materia;
 
-	for (j = 0; i - 1 > j; j++)
+	for (j = 0; j<i  ; j++)
 	{
 		// controllo se tra la materia richiesta e quella nel vetMateria sono uguali
 		if (vetMateria[j] == materia)
 		{
 			// calcola la media se sono uguali tra di loro
 			cont++;
-			somma = somma + vetVoto[j];
-			media = somma / cont;
+			somma = somma + vetVoto[j];	
 		}
-	}		
+	}
+			
+	media = somma / cont;
 	cout << "la media dei voti e: " << media;
 }
