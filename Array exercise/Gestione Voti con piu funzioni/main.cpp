@@ -115,7 +115,11 @@ int main()
 				{
 					if (cont == j)
 					{
-						vetVoto[cont] = vetVoto[i-1];
+						for(cont; cont < i; cont++)
+						{
+							vetMateria[cont] = vetMateria[cont+1];
+							vetVoto[cont] = vetVoto[cont+1];
+						}
 						i--;
 					}
 				}
